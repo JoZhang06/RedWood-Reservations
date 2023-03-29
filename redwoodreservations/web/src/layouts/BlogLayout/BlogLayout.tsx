@@ -19,6 +19,18 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
             <li>
               <Link to={routes.about()}>About</Link>
             </li>
+            <li>
+              <Link to={routes.myReservation()}>My Reservations</Link>
+            </li>
+            <li>
+              <Link to={routes.reservationList()}>Reservation List</Link>
+            </li>
+            <li>
+              <Link to={routes.hotels()}>Hotels</Link>
+            </li>
+            <li>
+              <Link to={routes.login()}>Login</Link>
+            </li>
           </ul>
         </nav>
       </header>
