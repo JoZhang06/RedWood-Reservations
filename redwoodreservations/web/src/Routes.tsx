@@ -8,8 +8,8 @@
 // 'src/pages/Admin/BooksPage/BooksPage.js' -> AdminBooksPage
 import { Router, Route, Set } from '@redwoodjs/router'
 
-import ScaffoldLayout from 'src/layouts/ScaffoldLayout'
 import BlogLayout from 'src/layouts/BlogLayout'
+import ScaffoldLayout from 'src/layouts/ScaffoldLayout'
 
 const Routes = () => {
   return (
@@ -22,12 +22,15 @@ const Routes = () => {
       </Set>
       <Set wrap={BlogLayout}>
         <Route path="/about" page={AboutPage} name="about" />
-        <Route path="/" page={HomePage} name="home" />
+        <Route path="/myReservation" page={MyReservationPage} name="myReservation" />
+        <Route path="/home" page={HomePage} name="home" />
+        <Route path="/login" page={LoginPage} name="login" />
+        <Route path="/hotels" page={HotelsPage} name="hotels" />
+        <Route path="/reservationList" page={ReservationListPage} name="reservationList" />
       </Set>
       <Route notfound page={NotFoundPage} />
     </Router>
   )
 }
-
 
 export default Routes
