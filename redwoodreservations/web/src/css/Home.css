@@ -1,0 +1,156 @@
+/* Estilos para la sección de la hero */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1532886489565-4c0823b75a88');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilos para la sección de destinos */
+.destinos {
+  background-color: #f7f7f7;
+  padding: 4rem 0;
+}
+
+.destinos h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.destinos ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.destinos li {
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.destinos a {
+  text-decoration: none;
+  color: #333;
+}
+
+.destino-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.destinos h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+/* Estilos para la sección de hoteles recomendados */
+.recomendados {
+  padding: 4rem 0;
+}
+
+.recomendados h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 1rem;
+}
+
+.card-text h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.card-text p {
+  margin-bottom: 1rem;
+}
+
+.card-location {
+  font-style: italic;
+}
+
+.card-price {
+  font-weight: bold;
+}
+
+/* Estilos para la sección de comentarios */
+.comentarios {
+  padding: 4rem 0;
+  background-color: #f7f7f7;
+}
+
+.comentarios h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.comentario {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.comentario img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.contenido {
+  flex: 1;
+}
+
+.comentario h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.comentario p {
+  margin-top: 1rem;
+}
