@@ -361,3 +361,7 @@ button {
 button:hover {
   background-color: #0288d1;
 }
+
+Link {
+  border: #777 1px solid;
+}
