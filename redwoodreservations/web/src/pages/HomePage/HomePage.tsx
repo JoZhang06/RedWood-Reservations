@@ -24,22 +24,22 @@ const HomePage = () => {
           <h2>Destinos populares</h2>
           <ul>
             <li>
-              <a href="#">
+              <Link to="#">
                 <img src={destiny} alt="Destino 1" className="destino-img" />
                 <h3>Destino 1</h3>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <img src={destiny} alt="Destino 2" className="destino-img" />
-                <h3>Destino 2</h3>
-              </a>
+              <Link to="#">
+                <img src={destiny} alt="Destino 1" className="destino-img" />
+                <h3>Destiny 2</h3>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <img src={destiny} alt="Destino 3" className="destino-img" />
-                <h3>Destino 3</h3>
-              </a>
+              <Link to="#">
+                <img src={destiny} alt="Destino 1" className="destino-img" />
+                <h3>Destiny 3</h3>
+              </Link>
             </li>
           </ul>
         </div>
@@ -55,9 +55,9 @@ const HomePage = () => {
                 <h3>Hotel 1</h3>
                 <p className="card-location">Ubicación 1</p>
                 <p className="card-price">Precio por noche: $100</p>
-                <a href="#" className="btn btn-primary">
-                  Reservar
-                </a>
+                <Link to="#" className="btn btn-primary">
+                  Reservar{' '}
+                </Link>
               </div>
             </div>
             <div className="card">
@@ -66,9 +66,9 @@ const HomePage = () => {
                 <h3>Hotel 2</h3>
                 <p className="card-location">Ubicación 2</p>
                 <p className="card-price">Precio por noche: $150</p>
-                <a href="#" className="btn btn-primary">
-                  Reservar
-                </a>
+                <Link to="#" className="btn btn-primary">
+                  Reservar{' '}
+                </Link>
               </div>
             </div>
             <div className="card">
@@ -77,9 +77,9 @@ const HomePage = () => {
                 <h3>Hotel 3</h3>
                 <p className="card-location">Ubicación 3</p>
                 <p className="card-price">Precio por noche: $200</p>
-                <a href="#" className="btn btn-primary">
-                  Reservar
-                </a>
+                <Link to="#" className="btn btn-primary">
+                  Reservar{' '}
+                </Link>
               </div>
             </div>
           </div>
