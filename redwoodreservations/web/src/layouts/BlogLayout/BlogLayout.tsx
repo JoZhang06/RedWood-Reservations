@@ -18,9 +18,6 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
   return (
     <>
       <header>
-        <h1>
-          <Link to={routes.home()}>Welcome to Redwood Reservations</Link>
-        </h1>
         <nav>
           <div>
             <ul>

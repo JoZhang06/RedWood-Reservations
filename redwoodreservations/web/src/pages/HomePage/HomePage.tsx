@@ -80,11 +80,9 @@ const HomePage = () => {
                 <Link to="#" className="btn btn-primary">
                   Reservar{' '}
                 </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+ar
+                </a>
+ction>
 
       <section className="comentarios">
         <div className="contenedor">
