@@ -85,7 +85,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
                   }}
                   to={routes.login()}
                 >
-                  Login
+                  Logout
                 </Link>
               </li>
             </ul>
