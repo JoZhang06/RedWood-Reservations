@@ -1,17 +1,52 @@
 /* Estilos para la sección de la hero */
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1532886489565-4c0823b75a88');
+  background-image: url('https://images7.alphacoders.com/362/362619.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333131;
+  color: #ffffff;
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%);
+  z-index: -1;
 }
 
 .hero-text {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 3rem;
 }
 
 .hero-text h1 {
@@ -40,6 +75,8 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .destinos li {
@@ -121,39 +158,46 @@
 .comentarios {
   padding: 4rem 0;
   background-color: #f7f7f7;
-}
+  }
 
-.comentarios h2 {
+  .comentarios h2 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
-}
+  }
 
-.comentario {
+  /* Estilos para cada comentario */
+  .comentario {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-}
+  }
 
-.comentario img {
+  .comentario img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   margin-right: 1rem;
-}
+  border-radius: 50%; /* añadir borde redondeado a la imagen */
+  }
 
-.contenido {
+  .contenido {
   flex: 1;
-}
+  }
 
-.comentario h3 {
+  .comentario h3 {
   font-size: 2rem;
   margin-top: 0;
-}
+  color: #555; /* añadir color de fuente */
+  }
 
-.comentario p {
+  .comentario p {
   margin-top: 1rem;
-}
+  line-height: 1.4; /* añadir altura de línea para mejorar la legibilidad /
+  font-size: 1.6rem; / aumentar tamaño de fuente para mejorar la legibilidad /
+  color: #777; / añadir color de fuente */
+  }
+
 nav {
   background-color: #c3c9d8;
   box-shadow: 0px 0px 20px rgb(61, 58, 77);
@@ -175,21 +219,75 @@ li {
   margin: 0;
 }
 
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  background-color: #0069d9;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+a.btn{
+  color: #fff;
+}
+
 a {
   display: block;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   transition: background-color 0.3s ease;
 }
 
 a:hover {
-  background-color: #ddd;
+  background-color: #f5f5f5;
+  border: #ffffff 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px #61636b;
+
 }
 
 a.active {
-  background-color: #555;
-  color: #fff;
+  background-color: rgba(255,255,255,0.5);
+  color: #333;
 }
 
 body {
@@ -200,5 +298,6 @@ h1 {
   text-align: center;
   margin-top: 100px;
   font-size: 3rem;
-  color: #333;
+  color: #ffffff;
 }
+
