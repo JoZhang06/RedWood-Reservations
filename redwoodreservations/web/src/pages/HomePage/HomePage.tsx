@@ -1,7 +1,6 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
-import destiny from '../../images/destiny.jpg'
 import Person1 from '../../images/person-1.jpg'
 import Person2 from '../../images/person-2.jpg'
 import Person3 from '../../images/person-3.jpg'

@@ -1,5 +1,5 @@
 import { MetaTags } from '@redwoodjs/web'
-import '../../css/Home.css'
+import '../../css/myReservation.css'
 
 const MyReservationPage = () => {
   return (
