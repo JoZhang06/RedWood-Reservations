@@ -4,7 +4,7 @@ import { MetaTags } from '@redwoodjs/web'
 import Person1 from '../../images/person-1.jpg'
 import Person2 from '../../images/person-2.jpg'
 import Person3 from '../../images/person-3.jpg'
-import destiny1 from '../../images/popular-destiny-1.jpeg'
+import destiny1 from '../../images/popular-destiny-1.png'
 import destiny2 from '../../images/popular-destiny-2.jpg'
 import destiny3 from '../../images/popular-destiny-3.jpg'
 import Recomended1 from '../../images/Recomended-hotel-1.jpg'
@@ -35,7 +35,7 @@ const HomePage = () => {
             <li>
               <Link to="#">
                 <img src={destiny1} alt="Destino 1" className="destino-img" />
-                <h3>Destino 1</h3>
+                <h3>Destiny 1</h3>
               </Link>
             </li>
             <li>
@@ -89,9 +89,11 @@ const HomePage = () => {
                 <Link to="#" className="btn btn-primary">
                   Reservar{' '}
                 </Link>
-ar
-                </a>
-ction>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="comentarios">
         <div className="contenedor">

@@ -1,20 +1,28 @@
-import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
+import '../../css/Home.css'
 
 const MyReservationPage = () => {
   return (
     <>
-      <MetaTags title="MyReservation" description="MyReservation page" />
+      <MetaTags title="My Reservation" description="MyReservation page" />
 
-      <h1>MyReservationPage</h1>
-      <p>
-        Find me in{' '}
-        <code>./web/src/pages/MyReservationPage/MyReservationPage.tsx</code>
-      </p>
-      <p>
-        My default route is named <code>myReservation</code>, link to me with `
-        <Link to={routes.myReservation()}>MyReservation</Link>`
-      </p>
+      <h2>My Personal Reservation</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Reservation No</td>
+            <td>Name</td>
+            <td>Reservation Checkin Date</td>
+            <td>Reservation Checkout Date</td>
+            <td>Status</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
     </>
   )
 }
