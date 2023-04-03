@@ -8,18 +8,53 @@ generator client {
   binaryTargets = "native"
 }
 
-model Post {
-  id        Int      @id @default(autoincrement())
-  title     String
-  body      String
-  createdAt DateTime @default(now())
+model Log {
+  logId         Int      @id @default(autoincrement())
+  reservationId Int
+  personId      Int
+  actionTaken   String
+  actionDate    DateTime
 }
 
-// Define your own datamodels here and run `yarn redwood prisma migrate dev`
-// to create migrations for them and apply to your dev DB.
-// TODO: Please remove the following example:
-model UserExample {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
+model Room {
+  roomId      Int    @id @default(autoincrement())
+  hotelId     Int
+  roomNumber  String
+  maxCapacity Int
+  description String
+  status      String
+}
+
+model Hotel {
+  hotelId      Int     @id @default(autoincrement())
+  name         String
+  address      String?
+  costPerAdult Float
+  costPerChild Float
+}
+
+model Person {
+  personId   Int     @id @default(autoincrement())
+  fullName   String
+  email      String
+  password   String
+  isEmployee Boolean
+  status     String
+}
+
+model Reservation {
+  reservationId        Int       @id @default(autoincrement())
+  personId             Int
+  roomId               Int
+  checkinDate          DateTime
+  checkoutDate         DateTime
+  numberOfAdults       Int
+  numberOfChildren     Int
+  totalReservationDays Int
+  costPerAdult         Float
+  CostPerChild         Float
+  totalCost            Float
+  createdDate          DateTime
+  modifiedDate         DateTime?
+  status               String
 }
